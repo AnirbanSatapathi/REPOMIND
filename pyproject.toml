@@ -1,0 +1,23 @@
+[project]
+name = "repomind"
+version = "0.1.0"
+description = "AI Codebase Understanding & Visualization Engine"
+authors = [{name = "Anirban"}]
+dependencies = [
+    "typer[all]",
+    "gitpython",
+    "tree-sitter",
+    "tree-sitter-languages",
+    "networkx",
+    "graphviz",
+    "sentence-transformers",
+    "faiss-cpu",
+    "ollama",
+]
+
+[project.scripts]
+repomind = "repomind.cli:app"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
