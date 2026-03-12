@@ -13,8 +13,9 @@ venv/
 *.svg
 *.png
 *.pdf
+*.md
 
 # IDEs
 .vscode/
 .idea/
-*.md
+repomind.egg-info
