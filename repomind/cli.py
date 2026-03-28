@@ -42,15 +42,24 @@ def analyze(repo_url: str = typer.Argument(..., help="URL of the repository to a
     except Exception as e:
         typer.echo(f"Error scanning repository: {e}")
         raise typer.Exit(code=1)
+    
     display_scan_results(result)
 
     typer.echo("\nParsing code files...")
     parsed_data = parser.parse_repo(result.get("code_files", []))
     typer.echo(f"Successfully parsed {len(parsed_data)} files.")
+    
     typer.echo("\nBuilding dependency graph...")
     graph = graph_builder.build_graph(parsed_data)
     edges_count = sum(len(deps) for deps in graph.values())
     typer.echo(f"Graph built with {len(graph)} nodes and {edges_count} edges.")
+
+    # Temp: Display sample of the graph
+    typer.echo("\n--- SAMPLE GRAPH ---")
+    for k, v in list(graph.items())[:10]:
+        typer.echo(k)
+        for dep in v:
+            typer.echo(f"   -> {dep}")
 
 @app.command()
 def scan(local_path: str = typer.Argument(..., help="Path to the local repository")):
@@ -59,6 +68,7 @@ def scan(local_path: str = typer.Argument(..., help="Path to the local repositor
     except Exception as e:
         typer.echo(f"Invalid repository path: {e}")
         raise typer.Exit(code=1)
+        
     typer.echo("\nScanning repository...")
     try:
         result = scanner.scan_repo(repo_path)
@@ -67,6 +77,7 @@ def scan(local_path: str = typer.Argument(..., help="Path to the local repositor
         raise typer.Exit(code=1)
 
     display_scan_results(result)
+    
     typer.echo("\nParsing code files...")
     parsed_data = parser.parse_repo(result.get("code_files", []))
     typer.echo(f"Successfully parsed {len(parsed_data)} files.")
@@ -75,6 +86,14 @@ def scan(local_path: str = typer.Argument(..., help="Path to the local repositor
     graph = graph_builder.build_graph(parsed_data)
     edges_count = sum(len(deps) for deps in graph.values())
     typer.echo(f"Graph built with {len(graph)} nodes and {edges_count} edges.")
+
+    # Temp: Display sample of the graph
+    typer.echo("\n--- SAMPLE GRAPH ---")
+    for k, v in list(graph.items())[:10]:
+        typer.echo(k)
+        for dep in v:
+            typer.echo(f"   -> {dep}")
+
 
 @app.command()
 def info():
