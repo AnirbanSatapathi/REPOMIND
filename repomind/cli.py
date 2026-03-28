@@ -88,11 +88,11 @@ def scan(local_path: str = typer.Argument(..., help="Path to the local repositor
     typer.echo(f"Graph built with {len(graph)} nodes and {edges_count} edges.")
 
     # Temp: Display sample of the graph
-    typer.echo("\n--- SAMPLE GRAPH ---")
-    for k, v in list(graph.items())[:10]:
-        typer.echo(k)
-        for dep in v:
-            typer.echo(f"   -> {dep}")
+    # typer.echo("\n--- SAMPLE GRAPH ---")
+    # for k, v in list(graph.items())[:10]:
+    #     typer.echo(k)
+    #     for dep in v:
+    #         typer.echo(f"   -> {dep}")
 
 
 @app.command()

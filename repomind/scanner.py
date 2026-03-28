@@ -26,6 +26,9 @@ class Scanner:
         ".gradle",
         "out",
         ".terraform",
+        ".uv-cache",
+        ".repomind",
+        "repomind.egg-info",
     }
 
     CODE_EXTENSIONS = {
