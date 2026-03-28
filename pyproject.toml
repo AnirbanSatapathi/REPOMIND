@@ -7,7 +7,7 @@ authors = [{name = "Anirban"}]
 dependencies = [
     "typer[all]",
     "gitpython",
-    "tree-sitter",
+    "tree-sitter==0.21.3",
     "tree-sitter-languages",
     "networkx",
     "graphviz",
