@@ -1,0 +1,200 @@
+// RepoMind Dependency Graph
+digraph dependency_graph {
+	overlap=false rankdir=LR splines=true
+	node [fontsize=10 margin=0.1]
+	"manage.py" [label="manage.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"accounts\admin.py" [label="accounts\admin.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"accounts\apps.py" [label="accounts\apps.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"accounts\models.py" [label="accounts\models.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"accounts\tests.py" [label="accounts\tests.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"accounts\tokens.py" [label="accounts\tokens.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"accounts\uniqueKey.py" [label="accounts\uniqueKey.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"accounts\urls.py" [label="accounts\urls.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"accounts\views.py" [label="accounts\views.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"accounts\__init__.py" [label="accounts\__init__.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"accounts\migrations\0001_initial.py" [label="accounts\migrations\0001_initial.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"accounts\migrations\__init__.py" [label="accounts\migrations\__init__.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"api\accountsAPI\admin.py" [label="api\accountsAPI\admin.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"api\accountsAPI\apps.py" [label="api\accountsAPI\apps.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"api\accountsAPI\models.py" [label="api\accountsAPI\models.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"api\accountsAPI\serializers.py" [label="api\accountsAPI\serializers.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"api\accountsAPI\tests.py" [label="api\accountsAPI\tests.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"api\accountsAPI\urls.py" [label="api\accountsAPI\urls.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"api\accountsAPI\views.py" [label="api\accountsAPI\views.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"api\accountsAPI\__init__.py" [label="api\accountsAPI\__init__.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"api\accountsAPI\migrations\__init__.py" [label="api\accountsAPI\migrations\__init__.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"api\home\admin.py" [label="api\home\admin.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"api\home\apps.py" [label="api\home\apps.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"api\home\models.py" [label="api\home\models.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"api\home\tests.py" [label="api\home\tests.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"api\home\urls.py" [label="api\home\urls.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"api\home\views.py" [label="api\home\views.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"api\home\__init__.py" [label="api\home\__init__.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"api\home\migrations\__init__.py" [label="api\home\migrations\__init__.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"api\tours\admin.py" [label="api\tours\admin.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"api\tours\apps.py" [label="api\tours\apps.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"api\tours\models.py" [label="api\tours\models.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"api\tours\serializers.py" [label="api\tours\serializers.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"api\tours\tests.py" [label="api\tours\tests.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"api\tours\urls.py" [label="api\tours\urls.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"api\tours\views.py" [label="api\tours\views.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"api\tours\__init__.py" [label="api\tours\__init__.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"api\tours\migrations\__init__.py" [label="api\tours\migrations\__init__.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"api\travelagencyAPI\admin.py" [label="api\travelagencyAPI\admin.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"api\travelagencyAPI\apps.py" [label="api\travelagencyAPI\apps.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"api\travelagencyAPI\models.py" [label="api\travelagencyAPI\models.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"api\travelagencyAPI\serializers.py" [label="api\travelagencyAPI\serializers.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"api\travelagencyAPI\tests.py" [label="api\travelagencyAPI\tests.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"api\travelagencyAPI\urls.py" [label="api\travelagencyAPI\urls.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"api\travelagencyAPI\views.py" [label="api\travelagencyAPI\views.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"api\travelagencyAPI\__init__.py" [label="api\travelagencyAPI\__init__.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"api\travelagencyAPI\migrations\__init__.py" [label="api\travelagencyAPI\migrations\__init__.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"api\travellerAPI\admin.py" [label="api\travellerAPI\admin.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"api\travellerAPI\apps.py" [label="api\travellerAPI\apps.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"api\travellerAPI\models.py" [label="api\travellerAPI\models.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"api\travellerAPI\serializers.py" [label="api\travellerAPI\serializers.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"api\travellerAPI\tests.py" [label="api\travellerAPI\tests.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"api\travellerAPI\urls.py" [label="api\travellerAPI\urls.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"api\travellerAPI\views.py" [label="api\travellerAPI\views.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"api\travellerAPI\__init__.py" [label="api\travellerAPI\__init__.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"api\travellerAPI\migrations\__init__.py" [label="api\travellerAPI\migrations\__init__.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"homeApp\admin.py" [label="homeApp\admin.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"homeApp\apps.py" [label="homeApp\apps.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"homeApp\models.py" [label="homeApp\models.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"homeApp\tests.py" [label="homeApp\tests.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"homeApp\urls.py" [label="homeApp\urls.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"homeApp\views.py" [label="homeApp\views.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"homeApp\__init__.py" [label="homeApp\__init__.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"homeApp\migrations\0001_initial.py" [label="homeApp\migrations\0001_initial.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"homeApp\migrations\__init__.py" [label="homeApp\migrations\__init__.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"invoice\invoice_generator.py" [label="invoice\invoice_generator.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"paytm\Checksum.py" [label="paytm\Checksum.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"qna\admin.py" [label="qna\admin.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"qna\apps.py" [label="qna\apps.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"qna\models.py" [label="qna\models.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"qna\tests.py" [label="qna\tests.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"qna\urls.py" [label="qna\urls.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"qna\views.py" [label="qna\views.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"qna\__init__.py" [label="qna\__init__.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"qna\migrations\0001_initial.py" [label="qna\migrations\0001_initial.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"qna\migrations\__init__.py" [label="qna\migrations\__init__.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"static\js_search\global.js" [label="static\js_search\global.js" fillcolor="#F7DF1E" fontcolor="#000000" fontname=Helvetica shape=box style=filled]
+	"static\vendor_search\bootstrap-wizard\bootstrap.min.js" [label="static\vendor_search\bootstrap-wizard\bootstrap.min.js" fillcolor="#F7DF1E" fontcolor="#000000" fontname=Helvetica shape=box style=filled]
+	"static\vendor_search\bootstrap-wizard\jquery.bootstrap.wizard.js" [label="static\vendor_search\bootstrap-wizard\jquery.bootstrap.wizard.js" fillcolor="#F7DF1E" fontcolor="#000000" fontname=Helvetica shape=box style=filled]
+	"static\vendor_search\bootstrap-wizard\jquery.bootstrap.wizard.min.js" [label="static\vendor_search\bootstrap-wizard\jquery.bootstrap.wizard.min.js" fillcolor="#F7DF1E" fontcolor="#000000" fontname=Helvetica shape=box style=filled]
+	"static\vendor_search\datepicker\daterangepicker.js" [label="static\vendor_search\datepicker\daterangepicker.js" fillcolor="#F7DF1E" fontcolor="#000000" fontname=Helvetica shape=box style=filled]
+	"static\vendor_search\datepicker\moment.min.js" [label="static\vendor_search\datepicker\moment.min.js" fillcolor="#F7DF1E" fontcolor="#000000" fontname=Helvetica shape=box style=filled]
+	"static\vendor_search\jquery\jquery.js" [label="static\vendor_search\jquery\jquery.js" fillcolor="#F7DF1E" fontcolor="#000000" fontname=Helvetica shape=box style=filled]
+	"static\vendor_search\jquery\jquery.min.js" [label="static\vendor_search\jquery\jquery.min.js" fillcolor="#F7DF1E" fontcolor="#000000" fontname=Helvetica shape=box style=filled]
+	"static\vendor_search\jquery-validate\jquery.validate.js" [label="static\vendor_search\jquery-validate\jquery.validate.js" fillcolor="#F7DF1E" fontcolor="#000000" fontname=Helvetica shape=box style=filled]
+	"static\vendor_search\jquery-validate\jquery.validate.min.js" [label="static\vendor_search\jquery-validate\jquery.validate.min.js" fillcolor="#F7DF1E" fontcolor="#000000" fontname=Helvetica shape=box style=filled]
+	"static\vendor_search\select2\select2.min.js" [label="static\vendor_search\select2\select2.min.js" fillcolor="#F7DF1E" fontcolor="#000000" fontname=Helvetica shape=box style=filled]
+	"touring\admin.py" [label="touring\admin.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"touring\apps.py" [label="touring\apps.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"touring\models.py" [label="touring\models.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"touring\tests.py" [label="touring\tests.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"touring\urls.py" [label="touring\urls.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"touring\views.py" [label="touring\views.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"touring\__init__.py" [label="touring\__init__.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"touring\migrations\0001_initial.py" [label="touring\migrations\0001_initial.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"touring\migrations\__init__.py" [label="touring\migrations\__init__.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"travelagency\admin.py" [label="travelagency\admin.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"travelagency\apps.py" [label="travelagency\apps.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"travelagency\models.py" [label="travelagency\models.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"travelagency\tests.py" [label="travelagency\tests.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"travelagency\urls.py" [label="travelagency\urls.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"travelagency\views.py" [label="travelagency\views.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"travelagency\__init__.py" [label="travelagency\__init__.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"travelagency\migrations\0001_initial.py" [label="travelagency\migrations\0001_initial.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"travelagency\migrations\__init__.py" [label="travelagency\migrations\__init__.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"traveller\admin.py" [label="traveller\admin.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"traveller\apps.py" [label="traveller\apps.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"traveller\models.py" [label="traveller\models.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"traveller\tests.py" [label="traveller\tests.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"traveller\urls.py" [label="traveller\urls.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"traveller\views.py" [label="traveller\views.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"traveller\__init__.py" [label="traveller\__init__.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"traveller\migrations\0001_initial.py" [label="traveller\migrations\0001_initial.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"traveller\migrations\__init__.py" [label="traveller\migrations\__init__.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"travmaks\settings.py" [label="travmaks\settings.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"travmaks\urls.py" [label="travmaks\urls.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"travmaks\wsgi.py" [label="travmaks\wsgi.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"travmaks\__init__.py" [label="travmaks\__init__.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"accounts\admin.py" -> "accounts\models.py"
+	"accounts\uniqueKey.py" -> "accounts\models.py"
+	"accounts\urls.py" -> "accounts\views.py"
+	"accounts\views.py" -> "accounts\models.py"
+	"accounts\views.py" -> "accounts\uniqueKey.py"
+	"accounts\views.py" -> "accounts\tokens.py"
+	"api\accountsAPI\serializers.py" -> "accounts\models.py"
+	"api\accountsAPI\urls.py" -> "api\accountsAPI\views.py"
+	"api\accountsAPI\views.py" -> "accounts\models.py"
+	"api\accountsAPI\views.py" -> "api\accountsAPI\serializers.py"
+	"api\accountsAPI\views.py" -> "accounts\tokens.py"
+	"api\home\urls.py" -> "api\home\views.py"
+	"api\home\views.py" -> "travelagency\models.py"
+	"api\home\views.py" -> "api\travelagencyAPI\serializers.py"
+	"api\tours\serializers.py" -> "touring\models.py"
+	"api\tours\urls.py" -> "api\tours\views.py"
+	"api\tours\views.py" -> "accounts\models.py"
+	"api\tours\views.py" -> "api\travelagencyAPI\serializers.py"
+	"api\tours\views.py" -> "touring\models.py"
+	"api\tours\views.py" -> "touring\tests.py"
+	"api\tours\views.py" -> "travelagency\models.py"
+	"api\tours\views.py" -> "api\tours\serializers.py"
+	"api\travelagencyAPI\serializers.py" -> "travelagency\models.py"
+	"api\travelagencyAPI\urls.py" -> "api\travelagencyAPI\views.py"
+	"api\travelagencyAPI\views.py" -> "travelagency\models.py"
+	"api\travelagencyAPI\views.py" -> "touring\models.py"
+	"api\travelagencyAPI\views.py" -> "api\travelagencyAPI\serializers.py"
+	"api\travelagencyAPI\views.py" -> "api\tours\serializers.py"
+	"api\travellerAPI\serializers.py" -> "traveller\models.py"
+	"api\travellerAPI\urls.py" -> "api\travellerAPI\views.py"
+	"api\travellerAPI\views.py" -> "traveller\models.py"
+	"api\travellerAPI\views.py" -> "api\travellerAPI\serializers.py"
+	"api\travellerAPI\views.py" -> "touring\models.py"
+	"api\travellerAPI\views.py" -> "travelagency\models.py"
+	"api\travellerAPI\views.py" -> "api\tours\serializers.py"
+	"homeApp\admin.py" -> "homeApp\models.py"
+	"homeApp\urls.py" -> "homeApp\views.py"
+	"homeApp\views.py" -> "travelagency\models.py"
+	"homeApp\views.py" -> "homeApp\models.py"
+	"qna\admin.py" -> "accounts\models.py"
+	"qna\admin.py" -> "qna\models.py"
+	"qna\models.py" -> "accounts\models.py"
+	"qna\urls.py" -> "qna\views.py"
+	"qna\views.py" -> "accounts\models.py"
+	"qna\views.py" -> "qna\models.py"
+	"touring\admin.py" -> "touring\models.py"
+	"touring\models.py" -> "accounts\models.py"
+	"touring\models.py" -> "travelagency\models.py"
+	"touring\tests.py" -> "touring\models.py"
+	"touring\urls.py" -> "touring\views.py"
+	"touring\views.py" -> "traveller\models.py"
+	"touring\views.py" -> "travelagency\models.py"
+	"touring\views.py" -> "touring\models.py"
+	"touring\views.py" -> "touring\tests.py"
+	"touring\views.py" -> "accounts\models.py"
+	"touring\views.py" -> "invoice\invoice_generator.py"
+	"travelagency\admin.py" -> "travelagency\models.py"
+	"travelagency\admin.py" -> "accounts\models.py"
+	"travelagency\models.py" -> "accounts\models.py"
+	"travelagency\tests.py" -> "accounts\models.py"
+	"travelagency\tests.py" -> "travelagency\models.py"
+	"travelagency\urls.py" -> "travelagency\views.py"
+	"travelagency\urls.py" -> "travelagency\tests.py"
+	"travelagency\views.py" -> "accounts\models.py"
+	"travelagency\views.py" -> "travelagency\models.py"
+	"travelagency\views.py" -> "touring\models.py"
+	"travelagency\views.py" -> "travelagency\tests.py"
+	"traveller\admin.py" -> "traveller\models.py"
+	"traveller\models.py" -> "travelagency\models.py"
+	"traveller\models.py" -> "accounts\models.py"
+	"traveller\urls.py" -> "traveller\views.py"
+	"traveller\views.py" -> "traveller\models.py"
+	"traveller\views.py" -> "travelagency\models.py"
+	"traveller\views.py" -> "touring\models.py"
+	"traveller\views.py" -> "accounts\models.py"
+	"traveller\views.py" -> "invoice\invoice_generator.py"
+	"travmaks\urls.py" -> "travmaks\settings.py"
+}

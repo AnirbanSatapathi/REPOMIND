@@ -5,6 +5,7 @@ import os
 from repomind.resolvers import (
     CFamilyResolver,
     CSharpResolver,
+    GoResolver,
     JavaResolver,
     JSResolver,
     PythonResolver,
@@ -32,6 +33,7 @@ class GraphBuilder:
         registry.register_resolver("Java", JavaResolver())
         registry.register_resolver("C#", CSharpResolver())
         registry.register_resolver("Rust", RustResolver())
+        registry.register_resolver("Go", GoResolver())
         return registry
 
     # ---------------- ROOT ----------------

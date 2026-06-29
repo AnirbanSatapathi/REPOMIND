@@ -54,7 +54,7 @@ class CSharpResolver(BaseResolver):
             repo_root / rel_path,
         ]
 
-        # Strateg 2: Try without leading project name segments (common convention)
+        # Strategy 2: Try without leading project name segments (common convention)
         if len(parts) > 1:
             for start in range(1, min(len(parts), 3)):
                 sub_parts = parts[start:]

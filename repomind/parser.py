@@ -7,6 +7,7 @@ from typing import Any, Callable, Dict, List
 from repomind.parsers import (
     CFamilyParser,
     CSharpParser,
+    GoParser,
     JavaParser,
     JavaScriptParser,
     ParserRegistry,
@@ -38,6 +39,7 @@ _EXT_TO_LANGUAGE: Dict[str, str] = {
     ".java": "Java",
     ".cs": "C#",
     ".rs": "Rust",
+    ".go": "Go",
 }
 
 
@@ -80,6 +82,7 @@ class Parser:
         java_parser = JavaParser(ts_engine)
         csharp_parser = CSharpParser(ts_engine)
         rust_parser = RustParser(ts_engine)
+        go_parser = GoParser(ts_engine)
 
         registry = ParserRegistry()
         registry.register_parser("Python", python_parser)
@@ -90,6 +93,7 @@ class Parser:
         registry.register_parser("Java", java_parser)
         registry.register_parser("C#", csharp_parser)
         registry.register_parser("Rust", rust_parser)
+        registry.register_parser("Go", go_parser)
         return registry
 
     def detect_language(self, file_path: Path) -> str:
@@ -138,5 +142,14 @@ class Parser:
         if not files:
             return []
 
-        repo_root = Path(os.path.commonpath([str(Path(f).resolve()) for f in files]))
-        return [self.parse_file(f, repo_root=repo_root) for f in files]
+        resolved = [Path(f).resolve() for f in files]
+        common = os.path.commonpath([str(p) for p in resolved])
+
+        # commonpath returns a file path if all files share the same parent dir
+        # e.g. /a/b/c.py -> /a/b. We need the directory.
+        common_path = Path(common)
+        if not common_path.is_dir():
+            common_path = common_path.parent
+
+        repo_root = common_path
+        return [self.parse_file(f, repo_root=repo_root) for f in resolved]

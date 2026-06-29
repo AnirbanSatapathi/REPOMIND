@@ -6,6 +6,7 @@ from .c_family import CFamilyResolver
 from .java import JavaResolver
 from .csharp import CSharpResolver
 from .rust import RustResolver
+from .go import GoResolver
 
 __all__ = [
     "BaseResolver",
@@ -16,4 +17,5 @@ __all__ = [
     "JavaResolver",
     "CSharpResolver",
     "RustResolver",
+    "GoResolver",
 ]

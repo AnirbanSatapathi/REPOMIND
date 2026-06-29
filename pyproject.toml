@@ -9,12 +9,15 @@ dependencies = [
     "gitpython",
     "tree-sitter==0.21.3",
     "tree-sitter-languages",
-    "networkx",
     "graphviz",
+    "pathspec",
+]
+
+[project.optional-dependencies]
+ai = [
     "sentence-transformers",
     "faiss-cpu",
     "ollama",
-    "pathspec",
 ]
 
 [project.scripts]

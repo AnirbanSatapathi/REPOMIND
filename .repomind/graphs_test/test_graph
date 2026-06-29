@@ -1,0 +1,14 @@
+// RepoMind Dependency Graph
+digraph test_graph {
+	overlap=false rankdir=LR splines=true
+	node [fontsize=10 margin=0.1]
+	"repomind\cli.py" [label="repomind\cli.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"repomind\visualizer.py" [label="repomind\visualizer.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"repomind\loader.py" [label="repomind\loader.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"repomind\scanner.py" [label="repomind\scanner.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"repomind\graph_builder.py" [label="repomind\graph_builder.py" fillcolor="#3776AB" fontcolor="#FFFFFF" fontname=Helvetica shape=box style=filled]
+	"repomind\cli.py" -> "repomind\loader.py"
+	"repomind\cli.py" -> "repomind\scanner.py"
+	"repomind\cli.py" -> "repomind\visualizer.py"
+	"repomind\visualizer.py" -> "repomind\graph_builder.py"
+}

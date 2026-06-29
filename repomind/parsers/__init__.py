@@ -6,6 +6,7 @@ from .c_parser import CFamilyParser
 from .java_parser import JavaParser
 from .csharp_parser import CSharpParser
 from .rust_parser import RustParser
+from .go_parser import GoParser
 
 __all__ = [
     "ParserRegistry",
@@ -16,4 +17,5 @@ __all__ = [
     "JavaParser",
     "CSharpParser",
     "RustParser",
+    "GoParser",
 ]
