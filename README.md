@@ -321,10 +321,6 @@ RepoMind runs **100% locally**. No data leaves your machine:
 
 ---
 
-## 📝 License
-
-MIT
-
 ---
 
 ## 🤝 Contributing
